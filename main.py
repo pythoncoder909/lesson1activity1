@@ -1,14 +1,14 @@
-import turtle    #importing library
-turtle.Screen().bgcolor("orange")
-turtle.Screen().setup(300,400)
-polygon = turtle.Turtle() #defined variable
- 
-num_sides = 6 #variable
-side_length = 70
-angle = 360.0 / num_sides
-#iterate loop for total number of side
-for i in range(num_sides):
-    polygon.forward(side_length)
-    polygon.right(angle)
-     
-turtle.done()
+#Take input for the student that he can attend the exam or not
+medical_cause=input("did you have a medical cause Y or N: ")
+#Take input of the attendance
+atten = int(input("enter the attendance of the student: "))
+
+#checking the user input predicting output accordingly
+
+if medical_cause == 'Y': #checking the condition 1
+  print ("You are allowed")
+else:
+  if atten>=75:  #checking the condition 2
+    print ("Allowed")
+  else:
+    print ("Not allowed")
